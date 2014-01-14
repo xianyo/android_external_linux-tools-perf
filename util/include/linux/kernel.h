@@ -57,6 +57,7 @@
 	_min1 < _min2 ? _min1 : _min2; })
 #endif
 
+#undef BUG_ON
 #ifndef BUG_ON
 #define BUG_ON(cond) assert(!(cond))
 #endif

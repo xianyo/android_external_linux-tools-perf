@@ -16,6 +16,7 @@
 #endif
 /* ANDROID_CHANGE_END */
 
+#undef BITS_PER_LONG
 #define BITS_PER_LONG __WORDSIZE
 #define BITS_PER_BYTE           8
 #define BITS_TO_LONGS(nr)       DIV_ROUND_UP(nr, BITS_PER_BYTE * sizeof(long))
